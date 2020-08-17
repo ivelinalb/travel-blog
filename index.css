@@ -1,0 +1,293 @@
+body {
+    font-family: 'Oxygen', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem; 
+    margin-bottom: 0rem;
+
+}
+
+header {
+    top: 1.7rem;
+    position: relative;
+    margin-bottom: 4rem;
+    background-image: url(./images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -9.4rem;
+}
+
+.header-img {
+    box-shadow: 0.1rem 0.2rem 1rem rgba(0, 0, 0, 0.2);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+nav {
+    background-color: #DBEBF4;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1; 
+}
+
+nav ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    font-size: 0.8rem;
+    padding: 0.7rem;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 1.2rem;
+}
+
+.img-gallery {
+    height: 200px;
+    border-radius: 1.5rem;
+    position: relative;
+    padding: 0.3rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: auto;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+.blue {
+    background-color: #DBEBF4;
+    width: 100%;
+    margin: 0;
+}
+
+.left-column {
+    margin: 3rem;
+    float: left;
+}
+
+.right-column {
+    margin: 3rem;
+    float: right;
+}
+
+.ringt-text-aling {
+    text-align: right;
+}
+
+h1 {
+    font-size: 4.5rem;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 3rem;
+    line-height: 130%;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 0rem;
+}
+
+h3 {
+    font-size: 2rem;
+    line-height: 130%;
+    font-weight: normal;
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+h5 {
+    font-size: 0.6rem;
+    line-height: 130%;
+    font-weight: normal;
+    text-align: center;
+}
+
+p {
+    line-height: 140%;
+}
+
+a, a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+.button {
+    border: 0.1rem, solid, #000000;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem 1.2rem;
+    text-align: center;
+    display: inline-block;
+    border-radius: 1.25rem;
+    background-color: transparent;
+    margin-top: 0.7rem;
+    outline: none;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: 2.5rem;
+}
+
+.content::after {
+    content: '';
+    left: 5rem;
+    height: 100%;
+    position: absolute;
+    width: 9.3rem;
+    z-index: 100;
+    pointer-events: none;
+}
+
+.content:before {
+    content: '';
+    right: 5rem;
+    height: 100%;
+    position: absolute;
+    width: 9.3rem;
+    z-index: 100;
+    pointer-events: none;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.gallery::-webkit-scrollbar {
+    height: 0px;
+}
+
+.gallery::after{
+    content: '';
+    display: block;
+    min-width: 1.2rem;
+    height: 6.2rem;
+    position: relative;
+}
+
+.gallery-content {
+    width: 18.7rem;
+    min-width: 18.7rem;
+    height: auto;
+    background: #ffffff;
+    border-radius: 1.1rem;
+    position: relative;
+    margin: 1.2rem;
+    cursor: pointer;
+}
+
+.prev-next-btn {
+    min-width: 2.5rem;
+    height: 2.5rem;
+    background-color: #f1f1f1;
+    color: #000000;
+    display: inline-block;
+    padding: 0.3rem, 0.3rem;
+    margin: 0.8rem;
+    border-radius: 1.5rem;
+    border: 0rem;
+    outline: none;
+    cursor: pointer;
+    z-index: 200;
+}
+  
+.prev-next-btn:hover {
+    background-color:#DBEBF4;
+    color: #000000;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    display: inline-block;
+    border: 0.1rem solid #ccc;
+    box-sizing: border-box;
+    border-radius: 1.25rem;
+    outline: none;
+}
+  
+input[type=checkbox] {
+    margin-top: 1rem;
+}
+  
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+#subscribe-btn {
+    width: 100%;
+    padding: 0.8rem 5rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 2rem;
+    background-color: #DBEBF4;
+    font-weight: 800;
+    border: none;
+}
+
+#search-btn {
+    width: 6.5rem;
+    box-sizing: border-box;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem 1.2rem;
+    border-radius: 1.25rem;
+    margin-top: 0.5rem;
+    background-color: white;
+    transition: width 0.4s ease-in-out;
+}
+
+#search-btn:focus {
+    width: 100%;
+    outline: none;
+}
+
+.contacts-section {
+    text-align: center;
+    position: relative;
+    margin-top: 3.2rem;
+}
+
+.fab {
+    margin: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.copyright li {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    font-size: 0.6rem;
+}
